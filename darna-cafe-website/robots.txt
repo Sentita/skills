@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darnacafe.example.com/sitemap.xml

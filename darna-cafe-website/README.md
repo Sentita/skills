@@ -10,7 +10,13 @@ A static, dependency-free website for Darna Cafe, a Mediterranean coffeehouse at
 - `css/style.css` — full design system (tokens, type scale, components)
 - `js/main.js` — interactivity (reveals, nav drawer, menu tabs, sticky narrative,
   FAQ accordion, form validation, active-section nav indicator)
-- `favicon.svg` — site icon
+- `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png`,
+  `icon-512.png` — site icons (SVG is primary; PNGs are fallbacks for older
+  browsers and home-screen/app icons)
+- `og-image.png` — 1200×630 share image for social/link previews, rendered
+  from the site's own design system (no stock photo or AI-generated scene)
+- `site.webmanifest` — PWA/home-screen metadata
+- `robots.txt`, `sitemap.xml` — crawler directives
 
 ## Running locally
 
@@ -26,6 +32,11 @@ Then open `http://localhost:8080`.
 
 This is plain HTML/CSS/JS and can be deployed as-is to GitHub Pages, Netlify,
 Vercel, or any static host.
+
+`darnacafe.example.com` is a placeholder domain used in `index.html`
+(canonical link, Open Graph/Twitter tags, structured data), `robots.txt`,
+and `sitemap.xml`. Once a real domain is chosen, find-and-replace it in
+those files.
 
 ## Confirmed content
 
