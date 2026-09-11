@@ -34,6 +34,7 @@ Vercel, or any static host.
   data (`openingHoursSpecification`).
 - **Phone** — (415) 466-5036 (from the Apple Maps listing). Linked as `tel:`
   in the "Visit" card and footer, and set as `telephone` in structured data.
+- **Facebook** — linked in the footer and set as `sameAs` in structured data.
 
 ## Known placeholders to replace with real content
 
@@ -43,6 +44,3 @@ Vercel, or any static host.
   ships three labeled placeholder slots rather than invented quotes.
 - **Contact form endpoint** — `js/main.js` has a placeholder submit handler;
   the real endpoint is commented at the `fetch(...)` line.
-- The Apple Maps listing also shows a `facebook.com` website link with no
-  path — if that's Darna's real Facebook page, send the full URL and it can
-  be added to the footer and structured data.
