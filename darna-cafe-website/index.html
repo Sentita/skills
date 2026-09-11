@@ -46,7 +46,22 @@
     "longitude": -117.983625
   },
   "hasMap": "https://maps.apple.com/place?address=2778%20W%20Ball%20Rd,%20Anaheim,%20CA%20%2092804,%20United%20States&coordinate=33.817098,-117.983625&name=Darna%20Cafe&place-id=IC374BE2C958E163&map=explore",
-  "url": "https://darnacafe.example.com/"
+  "telephone": "+1-415-466-5036",
+  "url": "https://darnacafe.example.com/",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+      "opens": "11:30",
+      "closes": "01:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday", "Saturday"],
+      "opens": "11:30",
+      "closes": "02:00"
+    }
+  ]
 }
 </script>
 </head>
@@ -220,7 +235,7 @@
           <div data-panel="hours" hidden>
             <dl>
               <dt>Hours</dt>
-              <dd>[Hours to be confirmed — see live hours on the map link below.]</dd>
+              <dd>Sun – Thu, 11:30am – 1am<br>Fri – Sat, 11:30am – 2am</dd>
             </dl>
           </div>
           <div data-panel="order" hidden>
@@ -231,10 +246,16 @@
               <dd>Call ahead or order at the counter.</dd>
             </dl>
           </div>
-          <a class="map-link" href="https://maps.apple.com/place?address=2778%20W%20Ball%20Rd,%20Anaheim,%20CA%20%2092804,%20United%20States&amp;coordinate=33.817098,-117.983625&amp;name=Darna%20Cafe&amp;place-id=IC374BE2C958E163&amp;map=explore">
-            Open in Apple Maps
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
+          <div style="display:flex; flex-direction:column; align-items:flex-start; gap:0.6rem; margin-top:1.6rem;">
+            <a class="map-link" style="margin-top:0;" href="tel:+14154665036">
+              (415) 466-5036
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a class="map-link" style="margin-top:0;" href="https://maps.apple.com/place?address=2778%20W%20Ball%20Rd,%20Anaheim,%20CA%20%2092804,%20United%20States&amp;coordinate=33.817098,-117.983625&amp;name=Darna%20Cafe&amp;place-id=IC374BE2C958E163&amp;map=explore">
+              Open in Apple Maps
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -250,7 +271,7 @@
         <div class="visit-step reveal" data-step="hours">
           <p class="num">02</p>
           <h3>When we're open</h3>
-          <p>Hours shift with the season, so check the live listing on Apple Maps before a special trip — it's kept current.</p>
+          <p>Sunday through Thursday, 11:30am to 1am. Friday and Saturday, 11:30am to 2am — a late room on purpose.</p>
         </div>
         <div class="visit-step reveal" data-step="order">
           <p class="num">03</p>
@@ -364,7 +385,15 @@
         <ul>
           <li>2778 W Ball Rd</li>
           <li>Anaheim, CA 92804</li>
+          <li><a href="tel:+14154665036">(415) 466-5036</a></li>
           <li><a href="https://maps.apple.com/place?address=2778%20W%20Ball%20Rd,%20Anaheim,%20CA%20%2092804,%20United%20States&amp;coordinate=33.817098,-117.983625&amp;name=Darna%20Cafe&amp;place-id=IC374BE2C958E163&amp;map=explore">Get Directions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <ul>
+          <li>Sun – Thu: 11:30am – 1am</li>
+          <li>Fri – Sat: 11:30am – 2am</li>
         </ul>
       </div>
       <div class="footer-col">

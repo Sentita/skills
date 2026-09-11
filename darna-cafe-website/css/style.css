@@ -584,7 +584,7 @@ section { position: relative; }
   grid-template-columns: 1fr;
   gap: 2.5rem;
 }
-@media (min-width: 800px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
+@media (min-width: 800px) { .footer-grid { grid-template-columns: 1.3fr 1fr 1fr 1fr; } }
 .footer-logo { display: flex; align-items: center; gap: 0.6rem; font-family: 'Fraunces', serif; font-size: 1.6rem; }
 .footer-logo svg { width: 30px; height: 30px; }
 .footer-col h5 { font-size: var(--fs-000); text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-soft); margin-bottom: 1rem; }
